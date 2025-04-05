@@ -1,6 +1,7 @@
-require('dotenv').config();
+require('dotenv').config();//para usar las variables de entorno
+//librería de JavaScript para hacer peticiones HTTP, como GET, POST, PUT, DELETE, etc.
 const axios = require('axios');
-
+//creamos la función para obtener el token
 async function getToken() {
   const params = new URLSearchParams();
   params.append('grant_type', 'client_credentials');
