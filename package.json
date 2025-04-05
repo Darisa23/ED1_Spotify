@@ -1,0 +1,26 @@
+{
+  "name": "ed1_spotify",
+  "version": "1.0.0",
+  "main": "index.js",
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Darisa23/ED1_Spotify.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Darisa23/ED1_Spotify/issues"
+  },
+  "homepage": "https://github.com/Darisa23/ED1_Spotify#readme",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "dotenv": "^16.4.7",
+    "node-fetch": "^3.3.2"
+  }
+}
