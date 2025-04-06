@@ -32,7 +32,7 @@ async function generarDatos(req, res) {
       const ids = tracksBasic.map(t => t.id);
       const fullTracks = await getTrackDetails(ids, token);
   
-      console.log('Primer track:', fullTracks[0]?.name, '-', fullTracks[0]?.artists?.[0]?.name);
+      console.log('Primer track:', fullTracks[0]?.name, '-', fullTracks[0]?.artist);
   
       const jsonPath = path.join('output', 'full_tracks.json');
       fs.writeFileSync(jsonPath, JSON.stringify(fullTracks, null, 2));
@@ -51,7 +51,7 @@ async function getArtistaMasRepetido(req, res) {
     try {
         const txtPath = path.join('output', 'datos.txt');
         const resultado = artistaMasRepetido(txtPath);
-    
+        console.log('Artista ID:', resultado.artista_id);
         const token = await getToken();
         const url = `https://api.spotify.com/v1/artists/${resultado.artista_id}`;
     

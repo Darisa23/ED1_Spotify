@@ -1,402 +1,101 @@
 [
   {
-    "id": "1WbXIpiGBJkCiv3hn40iPB",
-    "name": "Sobredosis (feat. Ozuna)",
-    "artist": "Romeo Santos| Ozuna",
-    "artist_ids": "5lwmRuXgjX8xIwlnauTZIP| 1i8SpTcr7yvPOmcqrbnVXY",
-    "popularity": 75,
-    "duration_ms": 198332
+    "id": "07a1JZd3ktwBFljqwB2znn",
+    "name": "Kimi ni Todoke",
+    "artist": "Tomofumi Tanizawa",
+    "artist_ids": "5n0GlcrNHmTAWB0xn4svSH",
+    "popularity": 55,
+    "duration_ms": 205773,
+    "image": "https://i.scdn.co/image/ab67616d00001e0294eb356840b5791547bbbb63"
   },
   {
-    "id": "07p0kLnvfQQ2bLujHyzSGK",
-    "name": "Rechazame",
-    "artist": "Prince Royce",
-    "artist_ids": "3MHaV05u0io8fQbZ2XPtlC",
-    "popularity": 74,
-    "duration_ms": 223200
+    "id": "6zQBXnRu7Yc42C6qp0trRE",
+    "name": "Egao No Mahou",
+    "artist": "MAGIC PARTY",
+    "artist_ids": "4cKfAXa3PNgUajAmnxAKCP",
+    "popularity": 45,
+    "duration_ms": 211520,
+    "image": "https://i.scdn.co/image/ab67616d00001e020d0b57487e4c9b506906203d"
   },
   {
-    "id": "20V2XxuPtOqtbis0M7aviz",
-    "name": "Si Yo Muero",
-    "artist": "Romeo Santos",
-    "artist_ids": "5lwmRuXgjX8xIwlnauTZIP",
-    "popularity": 57,
-    "duration_ms": 202840
+    "id": "5EFS3Cba2UznHJg7VlAZ71",
+    "name": "Believe in Myself (Fairy Tail Opening 21)",
+    "artist": "PelleK",
+    "artist_ids": "1qLwXsUtyW2Ba2Iotg4gE3",
+    "popularity": 0,
+    "duration_ms": 98497,
+    "image": "https://i.scdn.co/image/ab67616d00001e02526d1ea76bb4626a1bc3ad66"
   },
   {
-    "id": "0uLwWjN1KFO678WNJcZDkw",
-    "name": "Llévame Contigo",
-    "artist": "Romeo Santos",
-    "artist_ids": "5lwmRuXgjX8xIwlnauTZIP",
-    "popularity": 80,
-    "duration_ms": 226400
+    "id": "6KO96225tBlKP8yIZFMbqD",
+    "name": "Kyoukai no Kanata EP 6【約束の絆 / 境界の彼方】 - PianoBox Music",
+    "artist": "Relaxu",
+    "artist_ids": "7Glr8id1TfFSYoK04ENmNK",
+    "popularity": 5,
+    "duration_ms": 193411,
+    "image": "https://i.scdn.co/image/ab67616d00001e02cbd4d40406560d76aa44c318"
   },
   {
-    "id": "0WvY6XcW1illQAlR61HrpM",
-    "name": "No Voy a Morir Por ti",
-    "artist": "Daniel Simo",
-    "artist_ids": "4HZGfCiVVgfmaKlvyIF65k",
-    "popularity": 50,
-    "duration_ms": 222421
-  },
-  {
-    "id": "6hV6EpITzeBa1mzq5tvqpj",
-    "name": "Soberbio",
-    "artist": "Romeo Santos",
-    "artist_ids": "5lwmRuXgjX8xIwlnauTZIP",
-    "popularity": 64,
-    "duration_ms": 242333
-  },
-  {
-    "id": "68py7hjoxoGSE8HEoQIIwi",
-    "name": "Centavito",
-    "artist": "Romeo Santos",
-    "artist_ids": "5lwmRuXgjX8xIwlnauTZIP",
-    "popularity": 63,
-    "duration_ms": 262437
-  },
-  {
-    "id": "60bYDTKjrR9O8pdHRCiDEW",
-    "name": "7 Dias",
-    "artist": "Delirio Mix| FRVNKK",
-    "artist_ids": "7fiUtSeEYMX5lZZkKoiX77| 73ZUVJpRyRACS9qUSGVpWC",
-    "popularity": 28,
-    "duration_ms": 267133
-  },
-  {
-    "id": "6r46lnXFbE9fr2d3KNaGbe",
-    "name": "Imitadora",
-    "artist": "Romeo Santos",
-    "artist_ids": "5lwmRuXgjX8xIwlnauTZIP",
-    "popularity": 80,
-    "duration_ms": 234828
-  },
-  {
-    "id": "1k8xroLiN1vBqo3zhaJAHk",
-    "name": "Estrella Polar",
-    "artist": "Moa Rivera",
-    "artist_ids": "3SVGxBlWR0Cnamj9e2Ybmz",
-    "popularity": 32,
-    "duration_ms": 168016
-  },
-  {
-    "id": "4n82bvvKnaCSbM0pXWbR1S",
-    "name": "Amigo",
-    "artist": "Romeo Santos",
-    "artist_ids": "5lwmRuXgjX8xIwlnauTZIP",
-    "popularity": 68,
-    "duration_ms": 231586
-  },
-  {
-    "id": "2Bhmj4XK33InfhqKPxcJ1v",
-    "name": "Dile al Amor",
-    "artist": "Aventura",
-    "artist_ids": "1qto4hHid1P71emI6Fd8xi",
-    "popularity": 79,
-    "duration_ms": 229360
-  },
-  {
-    "id": "5A9AILetvfQg3LHyX5X0pV",
-    "name": "Yo También (feat. Marc Anthony)",
-    "artist": "Romeo Santos| Marc Anthony",
-    "artist_ids": "5lwmRuXgjX8xIwlnauTZIP| 4wLXwxDeWQ8mtUIRPxGiD6",
-    "popularity": 70,
-    "duration_ms": 306453
-  },
-  {
-    "id": "4YLNkgtcBDKVEcTQcskfkp",
-    "name": "Estoy Enamorado",
-    "artist": "Daniel Simo| Cielito Fernández",
-    "artist_ids": "4HZGfCiVVgfmaKlvyIF65k| 7MtZ82ktMDVGKukhjaK1Ta",
-    "popularity": 43,
-    "duration_ms": 204180
-  },
-  {
-    "id": "4IlYmkoAIUFBZsIlW3Mp8a",
-    "name": "Inocente",
-    "artist": "Delirio Mix| FRVNKK",
-    "artist_ids": "7fiUtSeEYMX5lZZkKoiX77| 73ZUVJpRyRACS9qUSGVpWC",
-    "popularity": 26,
-    "duration_ms": 277138
-  },
-  {
-    "id": "5GQIxPkd4OaLECpw8ZPZFm",
-    "name": "Incondicional",
-    "artist": "Prince Royce",
-    "artist_ids": "3MHaV05u0io8fQbZ2XPtlC",
+    "id": "5ORPYXJKlpHWIdceavSGrL",
+    "name": "遥か彼方",
+    "artist": "ASIAN KUNG-FU GENERATION",
+    "artist_ids": "0MK8l3nURwwQIjafvXoJJt",
     "popularity": 67,
-    "duration_ms": 207813
+    "duration_ms": 243346,
+    "image": "https://i.scdn.co/image/ab67616d00001e021f7e4a14a894499462aa82ce"
   },
   {
-    "id": "0dksvFuKZmfWJKrFMJSuRY",
-    "name": "Te Robare",
-    "artist": "Delirio Mix| FRVNKK",
-    "artist_ids": "7fiUtSeEYMX5lZZkKoiX77| 73ZUVJpRyRACS9qUSGVpWC",
-    "popularity": 27,
-    "duration_ms": 235093
-  },
-  {
-    "id": "63FRRwUrucPbeoHlgufmyp",
-    "name": "Odio",
-    "artist": "Delirio Mix| FRVNKK",
-    "artist_ids": "7fiUtSeEYMX5lZZkKoiX77| 73ZUVJpRyRACS9qUSGVpWC",
-    "popularity": 25,
-    "duration_ms": 257101
-  },
-  {
-    "id": "7zPe2WvSqWtdlDBwlvOdgQ",
-    "name": "Borracho y Que",
-    "artist": "Ronny Mercedes| DerekVinci| El Tiguere",
-    "artist_ids": "5EzBKoSqSIvU8uQnBP74T2| 7du7SizqDeaP96ds19p1yu| 1noUS4B84xt3nMpTIRgV8F",
-    "popularity": 41,
-    "duration_ms": 214118
-  },
-  {
-    "id": "79MlVxKj43tDISSISiVHJM",
-    "name": "Enseñame a Olvidar",
-    "artist": "Aventura",
-    "artist_ids": "1qto4hHid1P71emI6Fd8xi",
-    "popularity": 73,
-    "duration_ms": 348826
-  },
-  {
-    "id": "7FrPSk0rZdCPR50pfzdzMK",
-    "name": "Que Se Mueran",
-    "artist": "Romeo Santos",
-    "artist_ids": "5lwmRuXgjX8xIwlnauTZIP",
-    "popularity": 70,
-    "duration_ms": 250560
-  },
-  {
-    "id": "1SaEt8dwTuLDzenUu5BqI6",
-    "name": "Un Beso",
-    "artist": "Aventura",
-    "artist_ids": "1qto4hHid1P71emI6Fd8xi",
-    "popularity": 75,
-    "duration_ms": 263346
-  },
-  {
-    "id": "1sQrCwV8vvtYLqa0KQlwE9",
-    "name": "You",
-    "artist": "Romeo Santos",
-    "artist_ids": "5lwmRuXgjX8xIwlnauTZIP",
-    "popularity": 68,
-    "duration_ms": 248813
-  },
-  {
-    "id": "2ZHNW57LNgNjZkqgv9aCOY",
-    "name": "Eres Todo y Más",
-    "artist": "Daniel Simo",
-    "artist_ids": "4HZGfCiVVgfmaKlvyIF65k",
-    "popularity": 39,
-    "duration_ms": 235568
-  },
-  {
-    "id": "0beYgCC4ErBZyEUbnpdyOE",
-    "name": "No Tiene la Culpa",
-    "artist": "Romeo Santos",
-    "artist_ids": "5lwmRuXgjX8xIwlnauTZIP",
-    "popularity": 62,
-    "duration_ms": 304146
-  },
-  {
-    "id": "6eB5YDhEiJ2vsNajJP3732",
-    "name": "Todavía Me Amas",
-    "artist": "Aventura",
-    "artist_ids": "1qto4hHid1P71emI6Fd8xi",
+    "id": "7AffKWcNn5Zv7QFgScW2ox",
+    "name": "ホタルノヒカリ",
+    "artist": "Ikimonogakari",
+    "artist_ids": "5YneEA2nLtAhkD5t2769lZ",
     "popularity": 64,
-    "duration_ms": 285226
+    "duration_ms": 244066,
+    "image": "https://i.scdn.co/image/ab67616d00001e0274b9a0a138b331a6d1cbd32f"
   },
   {
-    "id": "7J3NNz0295XbOZIv10GFLI",
-    "name": "Tu Silencio",
-    "artist": "Daniel Moncion",
-    "artist_ids": "28UqZQBivOeUSS4k7Nclv5",
-    "popularity": 32,
-    "duration_ms": 200500
-  },
-  {
-    "id": "6uySceZM47VNUbZc7BPWQt",
-    "name": "Se Murió Cupido",
-    "artist": "Jhonny Evidence| DerekVinci",
-    "artist_ids": "7EndqnY5tR0pzhbVFJr5Zy| 7du7SizqDeaP96ds19p1yu",
-    "popularity": 27,
-    "duration_ms": 251681
-  },
-  {
-    "id": "0HDHY6RSHHG2ZTE0cMT4GJ",
-    "name": "Los Infieles",
-    "artist": "Aventura",
-    "artist_ids": "1qto4hHid1P71emI6Fd8xi",
-    "popularity": 81,
-    "duration_ms": 257186
-  },
-  {
-    "id": "4obI6bMfBGyRnIgM6HE2vD",
-    "name": "Tus Mentiras",
-    "artist": "Daniel Simo",
-    "artist_ids": "4HZGfCiVVgfmaKlvyIF65k",
-    "popularity": 36,
-    "duration_ms": 213750
-  },
-  {
-    "id": "2s4qBR3yaAvuVSTRR23wzS",
-    "name": "Borrón y Cuenta Nueva",
-    "artist": "Ralphy Dreamz",
-    "artist_ids": "5elxYg57OGXnqXm6wZDmvm",
-    "popularity": 46,
-    "duration_ms": 185374
-  },
-  {
-    "id": "6EErUzFfx0ZoxjXoq8ud8J",
-    "name": "Peligro",
-    "artist": "Aventura",
-    "artist_ids": "1qto4hHid1P71emI6Fd8xi",
-    "popularity": 56,
-    "duration_ms": 278373
-  },
-  {
-    "id": "1dUz0fKzM7joKgLiFwlGgE",
-    "name": "Venir",
-    "artist": "Vinny Rivera| DerekVinci| El Tiguere",
-    "artist_ids": "16KwTAKkQMkBVS0Fuz2vpt| 7du7SizqDeaP96ds19p1yu| 1noUS4B84xt3nMpTIRgV8F",
-    "popularity": 28,
-    "duration_ms": 225240
-  },
-  {
-    "id": "739lqxEHvBcvgcZsaYSRQO",
-    "name": "Quiero",
-    "artist": "Daniel Simo",
-    "artist_ids": "4HZGfCiVVgfmaKlvyIF65k",
-    "popularity": 25,
-    "duration_ms": 190888
-  },
-  {
-    "id": "12aRj8NkfBB9Pg9f0bueuR",
-    "name": "Llegaste",
-    "artist": "Johandy| DerekVinci",
-    "artist_ids": "1CitJ6r1mhjof0XLq0BMHQ| 7du7SizqDeaP96ds19p1yu",
-    "popularity": 43,
-    "duration_ms": 211012
-  },
-  {
-    "id": "7HsebNHZDGj8UhWIrZaMx6",
-    "name": "Bebo",
-    "artist": "Romeo Santos",
-    "artist_ids": "5lwmRuXgjX8xIwlnauTZIP",
+    "id": "7dEfa89dZfo6CQPdsgGCF6",
+    "name": "Nandemonaiya - movie ver.",
+    "artist": "RADWIMPS",
+    "artist_ids": "1EowJ1WwkMzkCkRomFhui7",
     "popularity": 64,
-    "duration_ms": 235733
+    "duration_ms": 344053,
+    "image": "https://i.scdn.co/image/ab67616d00001e023d1869d8c477d291a205a2d6"
   },
   {
-    "id": "57hbwt9CYmaVjjUG8KRgQ4",
-    "name": "Amor de Madre",
-    "artist": "Aventura",
-    "artist_ids": "1qto4hHid1P71emI6Fd8xi",
-    "popularity": 62,
-    "duration_ms": 350760
+    "id": "1n1y2kFPISpF9WGD3JaFo5",
+    "name": "Suzume",
+    "artist": "RADWIMPS|Toaka",
+    "artist_ids": "1EowJ1WwkMzkCkRomFhui7|0xFsJRSOYJmmuozISzreTR",
+    "popularity": 71,
+    "duration_ms": 238560,
+    "image": "https://i.scdn.co/image/ab67616d00001e02bc16d1eefe86b079c8805f8f"
   },
   {
-    "id": "7xedNwNq3plHWzTFznxsE9",
-    "name": "Ven",
-    "artist": "Daniel Simo",
-    "artist_ids": "4HZGfCiVVgfmaKlvyIF65k",
-    "popularity": 38,
-    "duration_ms": 152040
+    "id": "0ODOmKxO0CKv4DzoP3HHIC",
+    "name": "嘘",
+    "artist": "SID",
+    "artist_ids": "24b231EnCM3BkpiuWs5VBE",
+    "popularity": 0,
+    "duration_ms": 205973,
+    "image": "https://i.scdn.co/image/ab67616d00001e02157483f1a8718bb3a3fa7da8"
   },
   {
-    "id": "4Jp6SOushl6g6KNkMrZS1G",
-    "name": "Beso Traicionero",
-    "artist": "Daniel Moncion| Luis Miguel Del Amargue",
-    "artist_ids": "28UqZQBivOeUSS4k7Nclv5| 0tJDMMp9vT1q6zrPih0yFQ",
-    "popularity": 37,
-    "duration_ms": 205000
+    "id": "2gjS4IldZTcJOntzMW6oh8",
+    "name": "世界は恋に落ちている",
+    "artist": "CHiCO with HoneyWorks",
+    "artist_ids": "7qpGWSiolU9E5WbkvTaMDd",
+    "popularity": 0,
+    "duration_ms": 311720,
+    "image": "https://i.scdn.co/image/ab67616d00001e0255e2947aa84340a4026bc238"
   },
   {
-    "id": "4s8r4lbbUXF3xFdEXWgTrs",
-    "name": "Angelito",
-    "artist": "Aventura",
-    "artist_ids": "1qto4hHid1P71emI6Fd8xi",
-    "popularity": 69,
-    "duration_ms": 293146
-  },
-  {
-    "id": "4OUrhaVFa2tR0oVzBjonhv",
-    "name": "Clavada En Mi Cuerpo",
-    "artist": "Daniel Simo",
-    "artist_ids": "4HZGfCiVVgfmaKlvyIF65k",
-    "popularity": 39,
-    "duration_ms": 200769
-  },
-  {
-    "id": "4uUxCpAWzNxpMXoUYCoERX",
-    "name": "El Papel Part 1 (Versión Amante)",
-    "artist": "Romeo Santos",
-    "artist_ids": "5lwmRuXgjX8xIwlnauTZIP",
-    "popularity": 54,
-    "duration_ms": 218373
-  },
-  {
-    "id": "5YZr4BxMbWHBDv8HghJQRJ",
-    "name": "Mujeriego",
-    "artist": "Tony Lozano| Antonimusic| DerekVinci| El Tiguere| Belen",
-    "artist_ids": "3BcUTcUB24CvdeMUho68m4| 57wW3jmkYPARPBLraePqTm| 7du7SizqDeaP96ds19p1yu| 1noUS4B84xt3nMpTIRgV8F| 5zocvwXTEiIrmsGZiBuTAh",
-    "popularity": 46,
-    "duration_ms": 211567
-  },
-  {
-    "id": "69mRPCENvW75sIG5EJcAGB",
-    "name": "El Papel Part 2 (Versión Marido)",
-    "artist": "Romeo Santos",
-    "artist_ids": "5lwmRuXgjX8xIwlnauTZIP",
-    "popularity": 53,
-    "duration_ms": 281659
-  },
-  {
-    "id": "4uiFGDJ4HFCtBu6HNPH84q",
-    "name": "Y Si Se Quiere Ir",
-    "artist": "Ralphy Dreamz| Sandronyc",
-    "artist_ids": "5elxYg57OGXnqXm6wZDmvm| 5kmkNsW1vHzkOiG5nB3jsp",
-    "popularity": 23,
-    "duration_ms": 168115
-  },
-  {
-    "id": "4iSF0oZYDXeFTGHG20NOOF",
-    "name": "Sexo Con Ropa",
-    "artist": "Romeo Santos",
-    "artist_ids": "5lwmRuXgjX8xIwlnauTZIP",
-    "popularity": 54,
-    "duration_ms": 186160
-  },
-  {
-    "id": "6Waz7WyFSFsPeecyqNFBan",
-    "name": "Brujería",
-    "artist": "Jhonny Evidence| DerekVinci| Luis y Andrea| El Tiguere",
-    "artist_ids": "7EndqnY5tR0pzhbVFJr5Zy| 7du7SizqDeaP96ds19p1yu| 3WuUQzPFAFL7g0TPnoqB0a| 1noUS4B84xt3nMpTIRgV8F",
-    "popularity": 29,
-    "duration_ms": 215957
-  },
-  {
-    "id": "7fBuy1fdHEwG3mRdlHNM41",
-    "name": "Sus Huellas",
-    "artist": "Romeo Santos",
-    "artist_ids": "5lwmRuXgjX8xIwlnauTZIP",
-    "popularity": 63,
-    "duration_ms": 214613
-  },
-  {
-    "id": "22iCMlT0xYryKNnz4X5Vwn",
-    "name": "Solo Conmigo",
-    "artist": "Romeo Santos",
-    "artist_ids": "5lwmRuXgjX8xIwlnauTZIP",
-    "popularity": 70,
-    "duration_ms": 254920
-  },
-  {
-    "id": "6mjhmQB61lSVhgcmOFJv9L",
-    "name": "Ayúdame",
-    "artist": "Romeo Santos",
-    "artist_ids": "5lwmRuXgjX8xIwlnauTZIP",
-    "popularity": 59,
-    "duration_ms": 224426
+    "id": "1PyZF1WoRaladWtrFgvjet",
+    "name": "Kimi Ga Irukara",
+    "artist": "Mikuni Shimokawa",
+    "artist_ids": "6hDNyaAMX0SXk2IQbqVY75",
+    "popularity": 35,
+    "duration_ms": 266346,
+    "image": "https://i.scdn.co/image/ab67616d00001e020d0b57487e4c9b506906203d"
   }
 ]

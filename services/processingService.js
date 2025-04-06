@@ -6,7 +6,7 @@ export function crearArchivoSecuencial(jsonPath, outputPath) {
   const data = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
   
   const lines = data.map(track =>
-    `${track.id}|${track.name}|${track.artist.split(', ').length}|${track.artist}|${track.artist_ids}|${track.popularity}|${track.duration_ms}`
+    `${track.id}|${track.name}|${track.artist.split('|').length}|${track.artist}|${track.artist_ids}|${track.popularity}|${track.duration_ms}|${track.image}`
 );
 
   const text = lines.join('\n');
@@ -23,8 +23,9 @@ export function artistaMasRepetido(txtPath) {
   for (const linea of lineas) {
     if (!linea.trim()) continue;
     const partes = linea.split('|');
-    const artistas = partes[3].split('| ');
-    const ids = partes[4].split('|');
+    const cantidadArtistas = parseInt(partes[2]);
+    const artistas = partes[3].split('|');
+    const ids = partes[4+cantidadArtistas].split('|');
 
    for (let i = 0; i < artistas.length; i++) {
       const artista = artistas[i];
@@ -56,7 +57,7 @@ export function artistaConMasPopularidad(txtPath) {
   for (const linea of lineas) {
     if (!linea.trim()) continue;
     const partes = linea.split('|');
-    const artistas = partes[3].split('| ');
+    const artistas = partes[3].split('|');
     const ids = partes[4].split('|');
     const popularidad = parseInt(partes[5]);
 
@@ -135,7 +136,8 @@ export function cancionesSuperanPromedio(txtPath) {
         const prom = `${minutos}m ${segundos}s`;
         canciones.push({
           nombre: partes[1],
-          duracion_ms: prom
+          duracion_ms: prom,
+          imagen_url: partes[7]
         });
       }
     }
@@ -143,7 +145,7 @@ export function cancionesSuperanPromedio(txtPath) {
 
   return [`Promedio de duración: ${prom} `, 
           `Canciones que superan el promedio (${prom}):`].concat(
-    canciones.map(cancion => `${cancion.nombre}: ${cancion.duracion_ms}`)
+    canciones.map(cancion => `${cancion.nombre}: ${cancion.duracion_ms}- ${cancion.imagen_url}`)
   );
 }
 
@@ -161,7 +163,8 @@ export function cancionesOrdenadasPorPopularidad(txtPath) {
       canciones.push({
         nombre: partes[1],
         popularidad: popularidad,
-        artista: partes[3]
+        artista: partes[3],
+        imagen_url: partes[7]
       });
     }
   }
@@ -170,5 +173,5 @@ export function cancionesOrdenadasPorPopularidad(txtPath) {
   const cancionesOrdenadas = canciones.sort((a, b) => b.popularidad - a.popularidad);
   
   // Formateamos el resultado como strings
-  return cancionesOrdenadas.map(cancion => `${cancion.nombre}: ${cancion.popularidad} - ${cancion.artista}`);
+  return cancionesOrdenadas.map(cancion => `${cancion.nombre}: ${cancion.popularidad}- ${cancion.imagen_url} - ${cancion.artista}`);
 }

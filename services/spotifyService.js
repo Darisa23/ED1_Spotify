@@ -53,10 +53,11 @@ async function getTrackDetails(trackIds, token) {
   return res.data.tracks.map(track => ({
     id: track.id,
     name: track.name,
-    artist: track.artists.map(a => a.name).join('| '),
-    artist_ids: track.artists.map(a => a.id).join('| '),
+    artist: track.artists.map(a => a.name).join('|'),
+    artist_ids: track.artists.map(a => a.id).join('|'),
     popularity: track.popularity,
-    duration_ms: track.duration_ms
+    duration_ms: track.duration_ms,
+    image: track.album.images?.[1]?.url || null
   }));
 }
 async function getImagenArtista(artistId, token) {
