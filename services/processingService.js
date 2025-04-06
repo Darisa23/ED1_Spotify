@@ -137,7 +137,8 @@ export function cancionesSuperanPromedio(txtPath) {
         canciones.push({
           nombre: partes[1],
           duracion_ms: prom,
-          imagen_url: partes[7]
+          imagen_url: partes[7],
+          artista: partes[3]
         });
       }
     }
@@ -148,7 +149,8 @@ export function cancionesSuperanPromedio(txtPath) {
     canciones_superan_promedio: canciones.map(cancion => ({
       nombre: cancion.nombre,
       duracion: cancion.duracion_ms,
-      imagen: cancion.imagen_url
+      imagen: cancion.imagen_url,
+      artista: cancion.artista
     }))
   };
 }
