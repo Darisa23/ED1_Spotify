@@ -122,7 +122,7 @@ export function cancionesSuperanPromedio(txtPath) {
   //pasamos el promedio a minutos
   const minutos = Math.floor(promedioRedondeado / 60000);
   const segundos = Math.floor((promedioRedondeado % 60000) / 1000);
-  const prom = `${minutos}m ${segundos}s`;
+  const prom = `${minutos}:${segundos}`;
   // Segundo recorrido: filtrar canciones que superan el promedio
   for (const linea of lineas) {
     if (!linea.trim()) continue;
@@ -133,7 +133,7 @@ export function cancionesSuperanPromedio(txtPath) {
       if (duracion > promedio) {
         const minutos = Math.floor(duracion / 60000);
         const segundos = Math.floor((duracion % 60000) / 1000);
-        const prom = `${minutos}m ${segundos}s`;
+        const prom = `${minutos}:${segundos}`;
         canciones.push({
           nombre: partes[1],
           duracion_ms: prom,
