@@ -76,7 +76,7 @@ async function getArtistaConMasPopularidad(req, res) {
     try {
       const txtPath = path.join('output', 'datos.txt');
       const resultado = artistaConMasPopularidad(txtPath); 
-  
+      console.log("Artista: ",resultado);
       const token = await getToken();
       const url = `https://api.spotify.com/v1/artists/${resultado.id}`;
   
