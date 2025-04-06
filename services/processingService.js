@@ -143,10 +143,14 @@ export function cancionesSuperanPromedio(txtPath) {
     }
   }
 
-  return [`Promedio de duración: ${prom} `, 
-          `Canciones que superan el promedio (${prom}):`].concat(
-    canciones.map(cancion => `${cancion.nombre}: ${cancion.duracion_ms}- ${cancion.imagen_url}`)
-  );
+  return {
+    promedio: prom,
+    canciones_superan_promedio: canciones.map(cancion => ({
+      nombre: cancion.nombre,
+      duracion: cancion.duracion_ms,
+      imagen: cancion.imagen_url
+    }))
+  };
 }
 
 export function cancionesOrdenadasPorPopularidad(txtPath) {
@@ -172,6 +176,12 @@ export function cancionesOrdenadasPorPopularidad(txtPath) {
   // Ordenamos por popularidad descendente
   const cancionesOrdenadas = canciones.sort((a, b) => b.popularidad - a.popularidad);
   
-  // Formateamos el resultado como strings
-  return cancionesOrdenadas.map(cancion => `${cancion.nombre}: ${cancion.popularidad}- ${cancion.imagen_url} - ${cancion.artista}`);
+  return {
+    canciones_ordenadas: cancionesOrdenadas.map(cancion => ({
+      nombre: cancion.nombre,
+      popularidad: cancion.popularidad,
+      imagen: cancion.imagen_url,
+      artista: cancion.artista
+    }))
+  };
 }
