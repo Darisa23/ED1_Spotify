@@ -137,7 +137,7 @@ export function cancionesSuperanPromedio(txtPath) {
         canciones.push({
           nombre: partes[1],
           duracion_ms: prom,
-          imagen_url: partes[7],
+          imagen_url: partes[7].trim(),
           artista: partes[3]
         });
       }
@@ -170,7 +170,7 @@ export function cancionesOrdenadasPorPopularidad(txtPath) {
         nombre: partes[1],
         popularidad: popularidad,
         artista: partes[3],
-        imagen_url: partes[7]
+        imagen_url: partes[7].trim()
       });
     }
   }
