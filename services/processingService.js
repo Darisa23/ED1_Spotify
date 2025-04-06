@@ -25,7 +25,7 @@ export function artistaMasRepetido(txtPath) {
     const partes = linea.split('|');
     const cantidadArtistas = parseInt(partes[2]);
     const artistas = partes[3].split('|');
-    const ids = partes[4+cantidadArtistas].split('|');
+    const ids = partes[3+cantidadArtistas].split('|');
 
    for (let i = 0; i < artistas.length; i++) {
       const artista = artistas[i];
