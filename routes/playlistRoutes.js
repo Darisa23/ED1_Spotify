@@ -6,7 +6,8 @@ const {
   getCancionesQueSuperanPromedio,
   getCancionesOrdenadasPorPopularidad,
   getTamañoPromedioBytesPorRegistro,
-  getPlaylistsUsuario
+  getPlaylistsUsuario,
+  getAnalisisCompleto
 } = require('../controllers/playlistController');
 
 const router = express.Router();
@@ -17,6 +18,6 @@ router.get('/artista-popular', getArtistaConMasPopularidad);
 router.get('/canciones-mayores-promedio', getCancionesQueSuperanPromedio);
 router.get('/canciones-ordenadas', getCancionesOrdenadasPorPopularidad);
 router.get('/tamano-promedio', getTamañoPromedioBytesPorRegistro);
-
+router.get('/analisis-completo', getAnalisisCompleto);
 module.exports = router;
 

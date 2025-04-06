@@ -1,5 +1,5 @@
 const axios = require('axios');
-const { getToken, getTracksFromPlaylist, getTrackDetails } = require('../services/spotifyService');
+const { getToken, getTracksFromPlaylist, getTrackDetails, getImagenArtista } = require('../services/spotifyService');
 const {
   crearArchivoSecuencial,
   artistaMasRepetido,
@@ -138,6 +138,34 @@ async function getPlaylistsUsuario(req, res) {
       res.status(500).json({ error: 'No se pudieron obtener las playlists' });
     }
   }
+  async function getAnalisisCompleto(req, res) {
+    try {
+      const txtPath = path.join('output', 'datos.txt');
+  
+      const topArtista = artistaMasRepetido(txtPath);
+      const popularArtista = artistaConMasPopularidad(txtPath);
+      const cancionesOrdenadas = cancionesOrdenadasPorPopularidad(txtPath);
+      const cancionesPromedio = cancionesSuperanPromedio(txtPath);
+      const tamanoPromedio = tamañoPromedioBytesPorRegistro(txtPath);
+  
+      // Obtener imagen del artista más repetido
+      const token = await getToken();
+      const imagenData = await getImagenArtista(topArtista.artista_id, token);
+  
+      topArtista.imagen = imagenData;
+  
+      res.json({
+        artista_mas_repetido: topArtista,
+        artista_con_mas_popularidad: popularArtista,
+        canciones_ordenadas_por_popularidad: cancionesOrdenadas,
+        canciones_que_superan_promedio: cancionesPromedio,
+        tamaño_promedio_bytes: tamanoPromedio
+      });
+    } catch (error) {
+      console.error('Error al obtener análisis completo:', error);
+      res.status(500).json({ error: 'Error al obtener análisis completo' });
+    }
+  }
   
 
 module.exports = {
@@ -147,5 +175,6 @@ module.exports = {
   getCancionesQueSuperanPromedio,
   getCancionesOrdenadasPorPopularidad,
   getTamañoPromedioBytesPorRegistro,
-  getPlaylistsUsuario
+  getPlaylistsUsuario,
+  getAnalisisCompleto
 };

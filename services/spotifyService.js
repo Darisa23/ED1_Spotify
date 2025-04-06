@@ -59,10 +59,19 @@ async function getTrackDetails(trackIds, token) {
     duration_ms: track.duration_ms
   }));
 }
+async function getImagenArtista(artistId, token) {
+  const response = await axios.get(`https://api.spotify.com/v1/artists/${artistId}`, {
+    headers: {
+      Authorization: `Bearer ${token}`
+    }
+  });
 
+  return response.data.images?.[0]?.url || null;
+}
 //  Exportar todo
 module.exports = {
   getToken,
   getTracksFromPlaylist,
-  getTrackDetails
+  getTrackDetails,
+  getImagenArtista
 };
