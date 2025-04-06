@@ -53,7 +53,7 @@ async function getArtistaMasRepetido(req, res) {
         const resultado = artistaMasRepetido(txtPath);
     
         const token = await getToken();
-        const url = `https://api.spotify.com/v1/artists/${resultado.id}`;
+        const url = `https://api.spotify.com/v1/artists/${resultado.artista_id}`;
     
         const response = await axios.get(url, {
           headers: { Authorization: `Bearer ${token}` }

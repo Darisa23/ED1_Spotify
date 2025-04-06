@@ -6,7 +6,7 @@ export function crearArchivoSecuencial(jsonPath, outputPath) {
   const data = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
   
   const lines = data.map(track =>
-    `${track.id},${track.name},${track.artist.split(', ').length},${track.artist},${track.artist_ids},${track.popularity},${track.duration_ms}`
+    `${track.id}|${track.name}|${track.artist.split(', ').length}|${track.artist}|${track.artist_ids}|${track.popularity}|${track.duration_ms}`
 );
 
   const text = lines.join('\n');
@@ -22,9 +22,9 @@ export function artistaMasRepetido(txtPath) {
 
   for (const linea of lineas) {
     if (!linea.trim()) continue;
-    const partes = linea.split(',');
-    const artistas = partes[3].split(', ');
-    const ids = partes[4].split(',');
+    const partes = linea.split('|');
+    const artistas = partes[3].split('| ');
+    const ids = partes[4].split('|');
 
    for (let i = 0; i < artistas.length; i++) {
       const artista = artistas[i];
@@ -55,9 +55,9 @@ export function artistaConMasPopularidad(txtPath) {
 
   for (const linea of lineas) {
     if (!linea.trim()) continue;
-    const partes = linea.split(',');
-    const artistas = partes[3].split(', ');
-    const ids = partes[4].split(',');
+    const partes = linea.split('|');
+    const artistas = partes[3].split('| ');
+    const ids = partes[4].split('|');
     const popularidad = parseInt(partes[5]);
 
     for (let i = 0; i < artistas.length; i++) {
@@ -106,7 +106,7 @@ export function cancionesSuperanPromedio(txtPath) {
   // Primer recorrido: calcular el promedio de duraciones
   for (const linea of lineas) {
     if (!linea.trim()) continue;
-    const partes = linea.split(',');
+    const partes = linea.split('|');
     
     if (partes.length > 6 && !isNaN(parseInt(partes[6]))) {
       const duracion = parseInt(partes[6]);
@@ -125,7 +125,7 @@ export function cancionesSuperanPromedio(txtPath) {
   // Segundo recorrido: filtrar canciones que superan el promedio
   for (const linea of lineas) {
     if (!linea.trim()) continue;
-    const partes = linea.split(',');
+    const partes = linea.split('|');
     
     if (partes.length > 6 && !isNaN(parseInt(partes[6]))) {
       const duracion = parseInt(partes[6]);
@@ -153,7 +153,7 @@ export function cancionesOrdenadasPorPopularidad(txtPath) {
 
   for (const linea of lineas) {
     if (!linea.trim()) continue;
-    const partes = linea.split(',');
+    const partes = linea.split('|');
     
     // Verificamos que exista un valor de popularidad y sea un número válido
     const popularidad = parseInt(partes[5]);

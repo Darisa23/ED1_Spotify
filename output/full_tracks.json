@@ -2,8 +2,8 @@
   {
     "id": "1WbXIpiGBJkCiv3hn40iPB",
     "name": "Sobredosis (feat. Ozuna)",
-    "artist": "Romeo Santos, Ozuna",
-    "artist_ids": "5lwmRuXgjX8xIwlnauTZIP, 1i8SpTcr7yvPOmcqrbnVXY",
+    "artist": "Romeo Santos| Ozuna",
+    "artist_ids": "5lwmRuXgjX8xIwlnauTZIP| 1i8SpTcr7yvPOmcqrbnVXY",
     "popularity": 75,
     "duration_ms": 198332
   },
@@ -58,8 +58,8 @@
   {
     "id": "60bYDTKjrR9O8pdHRCiDEW",
     "name": "7 Dias",
-    "artist": "Delirio Mix, FRVNKK",
-    "artist_ids": "7fiUtSeEYMX5lZZkKoiX77, 73ZUVJpRyRACS9qUSGVpWC",
+    "artist": "Delirio Mix| FRVNKK",
+    "artist_ids": "7fiUtSeEYMX5lZZkKoiX77| 73ZUVJpRyRACS9qUSGVpWC",
     "popularity": 28,
     "duration_ms": 267133
   },
@@ -98,24 +98,24 @@
   {
     "id": "5A9AILetvfQg3LHyX5X0pV",
     "name": "Yo También (feat. Marc Anthony)",
-    "artist": "Romeo Santos, Marc Anthony",
-    "artist_ids": "5lwmRuXgjX8xIwlnauTZIP, 4wLXwxDeWQ8mtUIRPxGiD6",
+    "artist": "Romeo Santos| Marc Anthony",
+    "artist_ids": "5lwmRuXgjX8xIwlnauTZIP| 4wLXwxDeWQ8mtUIRPxGiD6",
     "popularity": 70,
     "duration_ms": 306453
   },
   {
     "id": "4YLNkgtcBDKVEcTQcskfkp",
     "name": "Estoy Enamorado",
-    "artist": "Daniel Simo, Cielito Fernández",
-    "artist_ids": "4HZGfCiVVgfmaKlvyIF65k, 7MtZ82ktMDVGKukhjaK1Ta",
+    "artist": "Daniel Simo| Cielito Fernández",
+    "artist_ids": "4HZGfCiVVgfmaKlvyIF65k| 7MtZ82ktMDVGKukhjaK1Ta",
     "popularity": 43,
     "duration_ms": 204180
   },
   {
     "id": "4IlYmkoAIUFBZsIlW3Mp8a",
     "name": "Inocente",
-    "artist": "Delirio Mix, FRVNKK",
-    "artist_ids": "7fiUtSeEYMX5lZZkKoiX77, 73ZUVJpRyRACS9qUSGVpWC",
+    "artist": "Delirio Mix| FRVNKK",
+    "artist_ids": "7fiUtSeEYMX5lZZkKoiX77| 73ZUVJpRyRACS9qUSGVpWC",
     "popularity": 26,
     "duration_ms": 277138
   },
@@ -130,24 +130,24 @@
   {
     "id": "0dksvFuKZmfWJKrFMJSuRY",
     "name": "Te Robare",
-    "artist": "Delirio Mix, FRVNKK",
-    "artist_ids": "7fiUtSeEYMX5lZZkKoiX77, 73ZUVJpRyRACS9qUSGVpWC",
+    "artist": "Delirio Mix| FRVNKK",
+    "artist_ids": "7fiUtSeEYMX5lZZkKoiX77| 73ZUVJpRyRACS9qUSGVpWC",
     "popularity": 27,
     "duration_ms": 235093
   },
   {
     "id": "63FRRwUrucPbeoHlgufmyp",
     "name": "Odio",
-    "artist": "Delirio Mix, FRVNKK",
-    "artist_ids": "7fiUtSeEYMX5lZZkKoiX77, 73ZUVJpRyRACS9qUSGVpWC",
+    "artist": "Delirio Mix| FRVNKK",
+    "artist_ids": "7fiUtSeEYMX5lZZkKoiX77| 73ZUVJpRyRACS9qUSGVpWC",
     "popularity": 25,
     "duration_ms": 257101
   },
   {
     "id": "7zPe2WvSqWtdlDBwlvOdgQ",
     "name": "Borracho y Que",
-    "artist": "Ronny Mercedes, DerekVinci, El Tiguere",
-    "artist_ids": "5EzBKoSqSIvU8uQnBP74T2, 7du7SizqDeaP96ds19p1yu, 1noUS4B84xt3nMpTIRgV8F",
+    "artist": "Ronny Mercedes| DerekVinci| El Tiguere",
+    "artist_ids": "5EzBKoSqSIvU8uQnBP74T2| 7du7SizqDeaP96ds19p1yu| 1noUS4B84xt3nMpTIRgV8F",
     "popularity": 41,
     "duration_ms": 214118
   },
@@ -218,8 +218,8 @@
   {
     "id": "6uySceZM47VNUbZc7BPWQt",
     "name": "Se Murió Cupido",
-    "artist": "Jhonny Evidence, DerekVinci",
-    "artist_ids": "7EndqnY5tR0pzhbVFJr5Zy, 7du7SizqDeaP96ds19p1yu",
+    "artist": "Jhonny Evidence| DerekVinci",
+    "artist_ids": "7EndqnY5tR0pzhbVFJr5Zy| 7du7SizqDeaP96ds19p1yu",
     "popularity": 27,
     "duration_ms": 251681
   },
@@ -258,8 +258,8 @@
   {
     "id": "1dUz0fKzM7joKgLiFwlGgE",
     "name": "Venir",
-    "artist": "Vinny Rivera, DerekVinci, El Tiguere",
-    "artist_ids": "16KwTAKkQMkBVS0Fuz2vpt, 7du7SizqDeaP96ds19p1yu, 1noUS4B84xt3nMpTIRgV8F",
+    "artist": "Vinny Rivera| DerekVinci| El Tiguere",
+    "artist_ids": "16KwTAKkQMkBVS0Fuz2vpt| 7du7SizqDeaP96ds19p1yu| 1noUS4B84xt3nMpTIRgV8F",
     "popularity": 28,
     "duration_ms": 225240
   },
@@ -274,8 +274,8 @@
   {
     "id": "12aRj8NkfBB9Pg9f0bueuR",
     "name": "Llegaste",
-    "artist": "Johandy, DerekVinci",
-    "artist_ids": "1CitJ6r1mhjof0XLq0BMHQ, 7du7SizqDeaP96ds19p1yu",
+    "artist": "Johandy| DerekVinci",
+    "artist_ids": "1CitJ6r1mhjof0XLq0BMHQ| 7du7SizqDeaP96ds19p1yu",
     "popularity": 43,
     "duration_ms": 211012
   },
@@ -306,8 +306,8 @@
   {
     "id": "4Jp6SOushl6g6KNkMrZS1G",
     "name": "Beso Traicionero",
-    "artist": "Daniel Moncion, Luis Miguel Del Amargue",
-    "artist_ids": "28UqZQBivOeUSS4k7Nclv5, 0tJDMMp9vT1q6zrPih0yFQ",
+    "artist": "Daniel Moncion| Luis Miguel Del Amargue",
+    "artist_ids": "28UqZQBivOeUSS4k7Nclv5| 0tJDMMp9vT1q6zrPih0yFQ",
     "popularity": 37,
     "duration_ms": 205000
   },
@@ -338,8 +338,8 @@
   {
     "id": "5YZr4BxMbWHBDv8HghJQRJ",
     "name": "Mujeriego",
-    "artist": "Tony Lozano, Antonimusic, DerekVinci, El Tiguere, Belen",
-    "artist_ids": "3BcUTcUB24CvdeMUho68m4, 57wW3jmkYPARPBLraePqTm, 7du7SizqDeaP96ds19p1yu, 1noUS4B84xt3nMpTIRgV8F, 5zocvwXTEiIrmsGZiBuTAh",
+    "artist": "Tony Lozano| Antonimusic| DerekVinci| El Tiguere| Belen",
+    "artist_ids": "3BcUTcUB24CvdeMUho68m4| 57wW3jmkYPARPBLraePqTm| 7du7SizqDeaP96ds19p1yu| 1noUS4B84xt3nMpTIRgV8F| 5zocvwXTEiIrmsGZiBuTAh",
     "popularity": 46,
     "duration_ms": 211567
   },
@@ -354,8 +354,8 @@
   {
     "id": "4uiFGDJ4HFCtBu6HNPH84q",
     "name": "Y Si Se Quiere Ir",
-    "artist": "Ralphy Dreamz, Sandronyc",
-    "artist_ids": "5elxYg57OGXnqXm6wZDmvm, 5kmkNsW1vHzkOiG5nB3jsp",
+    "artist": "Ralphy Dreamz| Sandronyc",
+    "artist_ids": "5elxYg57OGXnqXm6wZDmvm| 5kmkNsW1vHzkOiG5nB3jsp",
     "popularity": 23,
     "duration_ms": 168115
   },
@@ -370,8 +370,8 @@
   {
     "id": "6Waz7WyFSFsPeecyqNFBan",
     "name": "Brujería",
-    "artist": "Jhonny Evidence, DerekVinci, Luis y Andrea, El Tiguere",
-    "artist_ids": "7EndqnY5tR0pzhbVFJr5Zy, 7du7SizqDeaP96ds19p1yu, 3WuUQzPFAFL7g0TPnoqB0a, 1noUS4B84xt3nMpTIRgV8F",
+    "artist": "Jhonny Evidence| DerekVinci| Luis y Andrea| El Tiguere",
+    "artist_ids": "7EndqnY5tR0pzhbVFJr5Zy| 7du7SizqDeaP96ds19p1yu| 3WuUQzPFAFL7g0TPnoqB0a| 1noUS4B84xt3nMpTIRgV8F",
     "popularity": 29,
     "duration_ms": 215957
   },

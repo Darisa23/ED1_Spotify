@@ -35,7 +35,7 @@ async function getTracksFromPlaylist(playlistId, token) {
   const tracks = res.data.items.map(item => ({
     id: item.track.id,
     name: item.track.name,
-    artist: item.track.artists.map(a => a.name).join(', ')
+    artist: item.track.artists.map(a => a.name).join('| ')
   }));
 
   return tracks;
@@ -53,8 +53,8 @@ async function getTrackDetails(trackIds, token) {
   return res.data.tracks.map(track => ({
     id: track.id,
     name: track.name,
-    artist: track.artists.map(a => a.name).join(', '),
-    artist_ids: track.artists.map(a => a.id).join(', '),
+    artist: track.artists.map(a => a.name).join('| '),
+    artist_ids: track.artists.map(a => a.id).join('| '),
     popularity: track.popularity,
     duration_ms: track.duration_ms
   }));
