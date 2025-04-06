@@ -23,6 +23,9 @@ async function getToken() {
 
 // Obtener tracks de una playlist pública
 async function getTracksFromPlaylist(playlistId, token) {
+  //Cuando usas el endpoint de Spotify para buscar varias canciones por ID, 
+  // el límite es de 50 tracks por solicitud, para ahorrarnos trabajo trabajamos 
+  //siempre con las 50 primeras de la playlist
   const url = `https://api.spotify.com/v1/playlists/${playlistId}/tracks?limit=50`;
 
   const res = await axios.get(url, {

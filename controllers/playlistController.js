@@ -1,3 +1,4 @@
+const axios = require('axios');
 const { getToken, getTracksFromPlaylist, getTrackDetails } = require('../services/spotifyService');
 const {
   crearArchivoSecuencial,
@@ -71,11 +72,38 @@ function getTamañoPromedioBytesPorRegistro(req, res) {
   res.json({ tamañoPromedio: resultado });
 }
 
+
+async function getPlaylistsUsuario(req, res) {
+    try {
+      const { userId } = req.params;
+      const token = await getToken();
+      const url = `https://api.spotify.com/v1/users/${userId}/playlists`;
+  
+      const response = await axios.get(url, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+  
+      const playlists = response.data.items.map(p => ({
+        id: p.id,
+        name: p.name,
+        tracks: p.tracks.total,
+        image: p.images[0]?.url || null,
+      }));
+  
+      res.json({ playlists });
+    } catch (error) {
+      console.error('Error al obtener playlists:', error);
+      res.status(500).json({ error: 'No se pudieron obtener las playlists' });
+    }
+  }
+  
+
 module.exports = {
   generarDatos,
   getArtistaMasRepetido,
   getArtistaConMasPopularidad,
   getCancionesQueSuperanPromedio,
   getCancionesOrdenadasPorPopularidad,
-  getTamañoPromedioBytesPorRegistro
+  getTamañoPromedioBytesPorRegistro,
+  getPlaylistsUsuario
 };

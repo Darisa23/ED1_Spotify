@@ -12,5 +12,5 @@ app.use(express.json());
 app.use('/api', playlistRoutes);
 
 app.listen(PORT, () => {
-  console.log(`✅ Servidor escuchando en http://localhost:${PORT}`);
+  console.log(`Servidor escuchando en http://localhost:${PORT}`);
 });
