@@ -151,8 +151,10 @@ async function getPlaylistsUsuario(req, res) {
       // Obtener imagen del artista más repetido
       const token = await getToken();
       const imagenData = await getImagenArtista(topArtista.artista_id, token);
-  
+      const imagenDataPopular = await getImagenArtista(popularArtista.id, token);
+
       topArtista.imagen = imagenData;
+      popularArtista.imagen = imagenDataPopular;
   
       res.json({
         artista_mas_repetido: topArtista,
