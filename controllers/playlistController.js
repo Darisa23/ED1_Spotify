@@ -12,12 +12,17 @@ const {
 const fs = require('fs');
 const path = require('path');
 
-const PLAYLIST_ID = '083NlJ8KZ8VEPhYuR7Oxf4';
+//const PLAYLIST_ID = '083NlJ8KZ8VEPhYuR7Oxf4';
 
 async function generarDatos(req, res) {
     try {
+        const playlistId = req.query.playlistId;
+        if (!playlistId) {
+            return res.status(400).json({ error: 'Falta el playlistId' });
+        }
+
       const token = await getToken();
-      const tracksBasic = await getTracksFromPlaylist(PLAYLIST_ID, token);
+      const tracksBasic = await getTracksFromPlaylist(playlistId, token);
       
       console.log('Tracks básicos recibidos:', tracksBasic.length);
       if (!tracksBasic.length) {
@@ -42,17 +47,54 @@ async function generarDatos(req, res) {
     }
   }
 
-function getArtistaMasRepetido(req, res) {
-  const txtPath = path.join('output', 'datos.txt');
-  const resultado = artistaMasRepetido(txtPath);
-  res.json(resultado);
+async function getArtistaMasRepetido(req, res) {
+    try {
+        const txtPath = path.join('output', 'datos.txt');
+        const resultado = artistaMasRepetido(txtPath);
+    
+        const token = await getToken();
+        const url = `https://api.spotify.com/v1/artists/${resultado.id}`;
+    
+        const response = await axios.get(url, {
+          headers: { Authorization: `Bearer ${token}` }
+        });
+    
+        const imagen = response.data.images?.[0]?.url || null;
+    
+        res.json({
+          ...resultado,
+          imagen
+        });
+      } catch (error) {
+        console.error('Error obteniendo artista con imagen:', error.message);
+        res.status(500).json({ error: 'Error obteniendo la información del artista' });
+      }
 }
 
-function getArtistaConMasPopularidad(req, res) {
-  const txtPath = path.join('output', 'datos.txt');
-  const resultado = artistaConMasPopularidad(txtPath);
-  res.json(resultado);
-}
+
+async function getArtistaConMasPopularidad(req, res) {
+    try {
+      const txtPath = path.join('output', 'datos.txt');
+      const resultado = artistaConMasPopularidad(txtPath); 
+  
+      const token = await getToken();
+      const url = `https://api.spotify.com/v1/artists/${resultado.id}`;
+  
+      const response = await axios.get(url, {
+        headers: { Authorization: `Bearer ${token}` }
+      });
+  
+      const imagen = response.data.images?.[0]?.url || null;
+  
+      res.json({
+        ...resultado,
+        imagen
+      });
+    } catch (error) {
+      console.error('Error obteniendo artista popular con imagen:', error.message);
+      res.status(500).json({ error: 'Error obteniendo la información del artista' });
+    }
+  }
 
 function getCancionesQueSuperanPromedio(req, res) {
   const txtPath = path.join('output', 'datos.txt');

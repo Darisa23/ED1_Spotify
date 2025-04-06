@@ -4,10 +4,10 @@ import path from 'path';
 // Función que convierte JSON en .txt secuencial
 export function crearArchivoSecuencial(jsonPath, outputPath) {
   const data = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
-
+  
   const lines = data.map(track =>
-    `${track.id},${track.name},${track.artist.split(', ').length},${track.artist},${track.popularity},${track.duration_ms}`
-  );
+    `${track.id},${track.name},${track.artist.split(', ').length},${track.artist},${track.artist_ids},${track.popularity},${track.duration_ms}`
+);
 
   const text = lines.join('\n');
 
@@ -18,16 +18,20 @@ export function crearArchivoSecuencial(jsonPath, outputPath) {
 export function artistaMasRepetido(txtPath) {
   const lineas = fs.readFileSync(txtPath, 'utf-8').split('\n');
   const conteoArtistas = {};
+  const mapaNombreAId = {};
 
   for (const linea of lineas) {
     if (!linea.trim()) continue;
     const partes = linea.split(',');
-    const artistas = partes[3];
-    const listaArtistas = artistas.split(', ');
+    const artistas = partes[3].split(', ');
+    const ids = partes[4].split(',');
 
-    for (const artista of listaArtistas) {
+   for (let i = 0; i < artistas.length; i++) {
+      const artista = artistas[i];
+      const id = ids[i];
       if (!conteoArtistas[artista]) conteoArtistas[artista] = 0;
       conteoArtistas[artista]++;
+      mapaNombreAId[artista] = id;
     }
   }
 
@@ -41,24 +45,31 @@ export function artistaMasRepetido(txtPath) {
     }
   }
 
-  return { artista: artistaTop, apariciones: max };
+  return { artista: artistaTop, apariciones: max,  artista_id: mapaNombreAId[artistaTop],};
 }
 export function artistaConMasPopularidad(txtPath) {
   const lineas = fs.readFileSync(txtPath, 'utf-8').split('\n');
   const popularidadPorArtista = {};
   const conteo = {};
+  const mapaNombreAId = {};
 
   for (const linea of lineas) {
     if (!linea.trim()) continue;
     const partes = linea.split(',');
     const artistas = partes[3].split(', ');
-    const popularidad = parseInt(partes[4]);
+    const ids = partes[4].split(',');
+    const popularidad = parseInt(partes[5]);
 
-    for (const artista of artistas) {
+    for (let i = 0; i < artistas.length; i++) {
+      const artista = artistas[i];
+      const id = ids[i];
+
       if (!popularidadPorArtista[artista]) {
         popularidadPorArtista[artista] = 0;
         conteo[artista] = 0;
+        mapaNombreAId[artista] = id;
       }
+
       popularidadPorArtista[artista] += popularidad;
       conteo[artista]++;
     }
@@ -75,7 +86,7 @@ export function artistaConMasPopularidad(txtPath) {
     }
   }
 
-  return { artista: top, popularidadPromedio: maxProm.toFixed(2) };
+  return { artista: top, popularidadPromedio: maxProm.toFixed(2),id: mapaNombreAId[top] };
 }
 export function tamañoPromedioBytesPorRegistro(txtPath) {
   const lineas = fs.readFileSync(txtPath, 'utf-8').split('\n');
@@ -97,8 +108,8 @@ export function cancionesSuperanPromedio(txtPath) {
     if (!linea.trim()) continue;
     const partes = linea.split(',');
     
-    if (partes.length > 5 && !isNaN(parseInt(partes[5]))) {
-      const duracion = parseInt(partes[5]);
+    if (partes.length > 6 && !isNaN(parseInt(partes[6]))) {
+      const duracion = parseInt(partes[6]);
       suma += duracion;
       count++;
     }
@@ -116,8 +127,8 @@ export function cancionesSuperanPromedio(txtPath) {
     if (!linea.trim()) continue;
     const partes = linea.split(',');
     
-    if (partes.length > 5 && !isNaN(parseInt(partes[5]))) {
-      const duracion = parseInt(partes[5]);
+    if (partes.length > 6 && !isNaN(parseInt(partes[6]))) {
+      const duracion = parseInt(partes[6]);
       if (duracion > promedio) {
         const minutos = Math.floor(duracion / 60000);
         const segundos = Math.floor((duracion % 60000) / 1000);
@@ -145,7 +156,7 @@ export function cancionesOrdenadasPorPopularidad(txtPath) {
     const partes = linea.split(',');
     
     // Verificamos que exista un valor de popularidad y sea un número válido
-    const popularidad = parseInt(partes[4]);
+    const popularidad = parseInt(partes[5]);
     if (!isNaN(popularidad)) {
       canciones.push({
         nombre: partes[1],

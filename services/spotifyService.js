@@ -54,6 +54,7 @@ async function getTrackDetails(trackIds, token) {
     id: track.id,
     name: track.name,
     artist: track.artists.map(a => a.name).join(', '),
+    artist_ids: track.artists.map(a => a.id).join(', '),
     popularity: track.popularity,
     duration_ms: track.duration_ms
   }));
