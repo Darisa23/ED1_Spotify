@@ -45,7 +45,7 @@ export function artistaMasRepetido(txtPath) {
       artistaTop = artista;
     }
   }
-
+  console.log("Artistaaaa: ",artistaTop);
   return { artista: artistaTop, apariciones: max,  artista_id: mapaNombreAId[artistaTop],};
 }
 export function artistaConMasPopularidad(txtPath) {
@@ -140,7 +140,7 @@ export function cancionesSuperanPromedio(txtPath) {
           nombre: partes[1],
           duracion_ms: prom,
           imagen_url: partes[7(cantidadArtistas-1)*2].trim(),
-          artista: partes[3]
+          artista: partes.slice(3,3+cantidadArtistas),
         });
       }
     }
@@ -171,7 +171,7 @@ export function cancionesOrdenadasPorPopularidad(txtPath) {
       canciones.push({
         nombre: partes[1],
         popularidad: popularidad,
-        artista: partes[3],
+        artista: partes.slice(3,3+cantidadArtistas),
         imagen_url: partes[7+(cantidadArtistas-1)*2].trim()
       });
     }
