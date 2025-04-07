@@ -139,7 +139,7 @@ export function cancionesSuperanPromedio(txtPath) {
         canciones.push({
           nombre: partes[1],
           duracion_ms: prom,
-          imagen_url: partes[7(cantidadArtistas-1)*2].trim(),
+          imagen_url: partes[7+(cantidadArtistas-1)*2].trim(),
           artista: partes.slice(3,3+cantidadArtistas),
         });
       }
