@@ -1,0 +1,83 @@
+[
+  {
+    "id": "6rqj2zeKhLy3exkuFi6mSz",
+    "name": "Answer",
+    "artist": "Tyler, The Creator",
+    "artist_ids": "4V8LLVI7PbaPR0K2TGSxFF",
+    "popularity": 76,
+    "duration_ms": 230066,
+    "image": "https://i.scdn.co/image/ab67616d00001e0222007a4aa8a55fe7b1de5632"
+  },
+  {
+    "id": "5KbtuaVX7qdLkZ7uANefPJ",
+    "name": "Omerta",
+    "artist": "Joyce Santana",
+    "artist_ids": "4zOhMWD0LoBe2nP7s9cHhX",
+    "popularity": 43,
+    "duration_ms": 185051,
+    "image": "https://i.scdn.co/image/ab67616d00001e02840430fa9a99dda1731f80af"
+  },
+  {
+    "id": "60zPKhwSyxl1oCX1c2bsrM",
+    "name": "666",
+    "artist": "Yung Beef",
+    "artist_ids": "1rTUwYS38LkQTlT2fhikch",
+    "popularity": 34,
+    "duration_ms": 208979,
+    "image": "https://i.scdn.co/image/ab67616d00001e02f3d534c9f6f866889964d480"
+  },
+  {
+    "id": "6dOenYWgmDpinxmvqxECi1",
+    "name": "Madrid",
+    "artist": "Kidd Voodoo|Alvaro Diaz",
+    "artist_ids": "10VBp06W8NIgMW4JruLCC4|5J7rXWjtn5HzUkJ4Jet8Fr",
+    "popularity": 60,
+    "duration_ms": 227383,
+    "image": "https://i.scdn.co/image/ab67616d00001e02945390731cc27c08f425b77b"
+  },
+  {
+    "id": "60EfJcPYPNJfMP5Zrz4HBY",
+    "name": "Tres Tristes Tigueres",
+    "artist": "Doly Flackko|Emirsito",
+    "artist_ids": "6Mo5LUenVqXbaxeWw91lAH|7h4m4bjcwfXV0zPRRNUaiB",
+    "popularity": 32,
+    "duration_ms": 117665,
+    "image": "https://i.scdn.co/image/ab67616d00001e02cb1aad4cde173bd49624c973"
+  },
+  {
+    "id": "1WTE9lgXZ0vctdPEfYOoro",
+    "name": "Porque Te Vas (Jedet Version)",
+    "artist": "Cecilio G.|JEDET|MYGAL",
+    "artist_ids": "2Q2fYVYxFSmodq53BFyD6p|47sfJLBodmgIFXtpY3fork|6brqJHDrdbE1W3JzTxOoea",
+    "popularity": 42,
+    "duration_ms": 205896,
+    "image": "https://i.scdn.co/image/ab67616d00001e0204cd95bf66c219497e99880c"
+  },
+  {
+    "id": "4ENqgYr9cfTBqYVAdpsOLK",
+    "name": "Anova",
+    "artist": "Hesse Kassel",
+    "artist_ids": "5H88ECGf9hb6CqElLAKgld",
+    "popularity": 40,
+    "duration_ms": 442000,
+    "image": "https://i.scdn.co/image/ab67616d00001e02aa3341bfbc7bb3d6b2b0d772"
+  },
+  {
+    "id": "5zHAC2VURQnaehvbcTC7AE",
+    "name": "OLD NAVY",
+    "artist": "Feid|Sky Rompiendo",
+    "artist_ids": "2LRoIwlKmHjgvigdNGBHNo|51XrH5fQP2oIQynuKxSWcW",
+    "popularity": 67,
+    "duration_ms": 170000,
+    "image": "https://i.scdn.co/image/ab67616d00001e02c099e4b6e57fe7a2304b0213"
+  },
+  {
+    "id": "4cjmzyooA8MkQAKrfESAoo",
+    "name": "COMMENT",
+    "artist": "Feid",
+    "artist_ids": "2LRoIwlKmHjgvigdNGBHNo",
+    "popularity": 59,
+    "duration_ms": 170693,
+    "image": "https://i.scdn.co/image/ab67616d00001e0282877ed8854250100fb4a3f1"
+  }
+]
