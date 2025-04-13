@@ -48,6 +48,7 @@ export function artistaMasRepetido(txtPath) {
   console.log("Artistaaaa: ",artistaTop);
   return { artista: artistaTop, apariciones: max,  artista_id: mapaNombreAId[artistaTop],};
 }
+
 export function artistaConMasPopularidad(txtPath) {
   const lineas = fs.readFileSync(txtPath, 'utf-8').split('\n');
   const popularidadPorArtista = {};
@@ -90,6 +91,7 @@ export function artistaConMasPopularidad(txtPath) {
 
   return { artista: top, popularidadPromedio: maxProm.toFixed(2),id: mapaNombreAId[top] };
 }
+
 export function tamañoPromedioBytesPorRegistro(txtPath) {
   const lineas = fs.readFileSync(txtPath, 'utf-8').split('\n');
   const totalBytes = lineas.reduce((sum, l) => sum + Buffer.byteLength(l, 'utf-8'), 0);
